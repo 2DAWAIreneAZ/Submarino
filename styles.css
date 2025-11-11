@@ -1,0 +1,18 @@
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    background: #fff;
+    width: 90vmin;
+    height: 90vmin;
+		margin: auto;
+}
+
+.cell {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		cursor: pointer;
+		user-select: none; 
+}
