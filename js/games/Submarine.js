@@ -13,12 +13,11 @@ class Submarine {
 				console.log(this.x, this.y)
     }
 
-    mover(vecinos) {
-        const vecino =  vecinos[Math.floor(Math.random() * vecinos.length)];
+    move(neighbours) {
+        const neighbour =  neighbours[Math.floor(Math.random() * neighbours.length)];
 
-        this.x = vecino.x;
-        this.y = vecino.y;
-console.log(this.x, this.y)
+        this.x = neighbour.x;
+        this.y = neighbour.y;
     }
 }
 

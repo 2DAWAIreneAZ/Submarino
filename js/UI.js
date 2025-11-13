@@ -1,9 +1,9 @@
 export const UI = {
-    game : null,
-    control : {
+    game: null,
+    control: {
 			board: null,
 			status: null,
-			size : null
+			size: null
     },
 
     init: (domControl, game) => {
@@ -36,6 +36,7 @@ export const UI = {
 						window.alert("You win!")
 					}
 				});
+
 			cell.dataset.row = Math.floor(i/this.control.size);
 			cell.dataset.column = i%this.control.size;
 			this.control.board.appendChild(clon);

@@ -3,8 +3,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4px;
     background: #fff;
-    width: 90vmin;
-    height: 90vmin;
+    width: 80vmin;
+    height: 80vmin;
 		margin: auto;
 }
 

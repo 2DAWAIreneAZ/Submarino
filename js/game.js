@@ -8,5 +8,6 @@ UI.init({
 });
 
 const gameInstance = Game(GAMES.Submarine, UI);
+gameInstance.start();
 
 
