@@ -14,3 +14,7 @@ dando paso a una nueva partida.
 
 Siguiendo lo anterior, el orden de inicio del juego comenzaría en `game.js` que llama y le da valor a las propiedades del juego. Tras esto, se selecciona el juego (submarino) y se llama 
 a su método `start()`. Este inicializa la tabla lógica con las celdas y sus vecinos y llama al método `start()` de la parte gráfica que inicializa el tablero visual.
+
+# Dificultades
+
+Más que problemas, lo que más me ha costado ha sido separar la lógica de la parte gráfica.
