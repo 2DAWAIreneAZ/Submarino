@@ -17,4 +17,4 @@ a su método `start()`. Este inicializa la tabla lógica con las celdas y sus ve
 
 # Dificultades
 
-Más que problemas, lo que más me ha costado ha sido separar la lógica de la parte gráfica.
+Más que problemas, lo que más me ha costado ha sido separar la parte lógica de la gráfica.
