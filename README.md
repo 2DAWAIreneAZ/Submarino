@@ -9,12 +9,7 @@ guardar la información de las celdas del tablero y los vecinos de esa celda. Es
 Gracias a los vecinos, el submarino solo tendrá en cuenta los movimientos que no se salgan del tablero. Tanto la inicialización como la asignación de celdas y sus vecinos se ha hecho a partir
 de una tabla bidimensional que posteriormente se ha aplanado con el método `flat()`, que convierte el array a una dimensión. 
 
-Dentro de `UI.js` se enceuntra el método `init` que es el encargado de dar los valores a las propiedades del juego, mientras que `start` se encarga de limpiar el juego anterior,
-dando paso a una nueva partida.
+Mientras revisaba el código, cambié la creación de la tabla gráfica del `start()` al `init()`, ya que esta tabla no necesita ser reiniciada cuando empieza una nueva partida,
+ya que la parte visual no cambia entre partidas, únicamente la lógica. Tras esto, he añadido que al finalizar una partida se reinicie.
 
-Siguiendo lo anterior, el orden de inicio del juego comenzaría en `game.js` que llama y le da valor a las propiedades del juego. Tras esto, se selecciona el juego (submarino) y se llama 
-a su método `start()`. Este inicializa la tabla lógica con las celdas y sus vecinos y llama al método `start()` de la parte gráfica que inicializa el tablero visual.
-
-# Dificultades
-
-Más que problemas, lo que más me ha costado ha sido separar la parte lógica de la gráfica.
+La parte más problemática de la práctica ha sido separar la parte lógica de la gráfica, más que el juego en sí.

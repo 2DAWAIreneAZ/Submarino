@@ -10,7 +10,7 @@ class Cell {
         this.x = x;
         this.y = y;
         this.neighbours = [null, null, null, null];
-				// this.value = 0; PARA EL RASTRO NS
+				// this.value = 0;
     }
 
     assignNeighbour(direction, cell) {
