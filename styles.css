@@ -1,18 +1,52 @@
+:root {
+	--board-bg-color: darkgray;
+	--primary-color: gray;
+	--secondary-color: darkgray;
+	--tertiary-color: lightblue;
+}
+
+body {
+	background-color: var(--secondary-color);
+	margin: 0;
+}
+
+.title {
+	font-size: 3rem;
+	text-align: center;
+	padding: 2rem;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 #game-board {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4px;
-    background: #fff;
-    width: 80vmin;
-    height: 80vmin;
-		margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4px;
+	background: #fff;
+	width: 80vmin;
+	height: 80vmin;
+	padding: 2rem;
+	margin: auto;
+	background-color: var(--secondary-color);
 }
 
 .cell {
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-		cursor: pointer;
-		user-select: none; 
+	border: 1px solid var(--primary-color);
+	background-color: var(--tertiary-color);
+	border-radius: 7.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none; 
+}
+
+.cell:hover {
+	border-color: gold;
+}
+
+#game-status {
+	padding: 1rem;
+	font-size: 2rem;
+	text-align: center;
 }
